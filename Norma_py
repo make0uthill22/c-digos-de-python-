@@ -1,0 +1,7 @@
+import math
+def norma(v):
+    suma_cuadrados = sum(x**2 for x in v)
+    return math.sqrt(suma_cuadrados)
+vector = [8, 6]
+resultado = norma(vector)
+print("La norma del vector es:", resultado)
