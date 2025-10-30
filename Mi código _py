@@ -1,0 +1,19 @@
+def clasificar_numeros(lista, k):
+    menores = []
+    mayores = []
+    iguales = []
+    for numero in lista:
+        if numero < k:
+            menores.append(numero)
+        elif numero > k:
+            mayores.append(numero)
+        else:
+            iguales.append(numero)
+    return menores, mayores, iguales
+numeros = [3, 7, 5, 2, 5, 9, 1]
+k = 5
+
+menores, mayores, iguales = clasificar_numeros(numeros, k)
+print("Menores que", k, ":", menores)
+print("Mayores que", k, ":", mayores)
+print("Iguales a", k, ":", iguales)
