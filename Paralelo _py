@@ -1,0 +1,18 @@
+def son_paralelos(v1, v2):
+    if len(v1) != len(v2):
+        return False
+    razones = []
+    for a, b in zip(v1, v2):
+        if b == 0:
+            if a != 0:
+                return False
+        else:
+            razones.append(a / b)
+    return all(r == razones[0] for r in razones)
+
+vector1 = [2, 4, 6]
+vector2 = [1, 2, 3]
+
+resultado = son_paralelos(vector1, vector2)
+
+print("¿Son paralelos?", resultado)
