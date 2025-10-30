@@ -1,0 +1,6 @@
+def multiplos_de_k(lista, k):
+    return [x for x in lista if x % k == 0]
+numeros = [30, 33, 43, 50, 62, 75]
+k = 5
+resultado = multiplos_de_k(numeros, k)
+print(resultado)
