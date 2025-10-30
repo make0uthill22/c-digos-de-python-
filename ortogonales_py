@@ -1,0 +1,9 @@
+def son_ortogonales(v1, v2): 
+return producto_escalar(v1, v2) == 0
+vector1 = [1, 2, -1]
+vector2 = [2, 76, 0]
+
+resultado = son_ortogonales(vector1, vector2)
+
+print("¿Son ortogonales?", resultado)
+ 
